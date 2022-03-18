@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
    return (
-      <div>
+      <>
          <h1 className='text-6xl mb-4'>
             Github
             <span className='text-yellow-500'>Finder</span>
@@ -39,7 +39,7 @@ function About() {
                Hassib Moddasser
             </a>
          </p>
-      </div>
+      </>
    );
 }
 
