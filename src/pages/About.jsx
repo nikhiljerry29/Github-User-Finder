@@ -3,7 +3,7 @@ import React from "react";
 function About() {
    return (
       <>
-         <h1 className='text-6xl mb-4'>
+         <h1 className='text-6xl mb-4 text-gray-100'>
             Github
             <span className='text-yellow-500'>Finder</span>
          </h1>

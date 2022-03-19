@@ -27,17 +27,28 @@ export const GithubProvider = ({ children }) => {
          q: text,
       });
 
-      const response = await fetch(`${GITHUB_URL}/search/users/${params}`, {
+      const response = await fetch(`${GITHUB_URL}/search/users?${params}`, {
          headers: {
             Authorization: `token ${GITHUB_TOKEN}`,
          },
       });
 
-      const data = await response.json();
+      const { items } = await response.json();
+      console.log(items);
       dispatch({
          type: "GET_USERS",
-         payload: data,
+         payload: items,
       });
+   };
+
+   // Clear Users
+   const clearUsers = () => {
+      if (state.users.length > 0) {
+         dispatch({
+            type: "CLEAR_USERS",
+         });
+         console.log("Clearing users");
+      }
    };
 
    return (
@@ -45,7 +56,8 @@ export const GithubProvider = ({ children }) => {
          value={{
             users: state.users,
             isLoading: state.isLoading,
-            fetchUsers: searchUsers,
+            searchUsers,
+            clearUsers,
          }}
       >
          {children}
