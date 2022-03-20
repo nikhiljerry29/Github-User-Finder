@@ -23,9 +23,9 @@ A React app to search GitHub profiles and see profile details. This project is p
 npm install
 ```
 
-2. Create `.env` file at root location and intialize below keys. As mentioned above the application is configured for using MongoDB as a database.
+2. Create `.env` file at root location and intialize below keys. As mentioned above the application is configured for using Github API.
 
-> **NOTE:** To get your GITHUB token, Go to your Github profile settings, then click on developer settings, you'll see the option for _Personal Access Token_
+> **NOTE:** To get your GITHUB token, Go to your Github profile settings, then click on developer settings, you'll see the option for _Personal Access Token_. Now you'll be able to create your own token.
 
 ```
 REACT_APP_GITHUB_TOKEN
