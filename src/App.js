@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Alert from "./components/layouts/Alert";
 import Footer from "./components/layouts/Footer";
 import Navbar from "./components/layouts/Navbar";
-import User from "./components/layouts/User";
+import User from "./pages/User";
 import { AlertProvider } from "./context/alert/AlertContext";
 import { GithubProvider } from "./context/github/GithubContext";
 import About from "./pages/About";
