@@ -11,7 +11,7 @@ function About() {
             A React app to search GitHub profiles and see profile details. This
             project is part of the{" "}
             <a
-               href='https://www.udemy.com/course/modern-react-front-to-back/'
+               href='https://www.udemy.com/course/react-front-to-back-2022/'
                className='underline decoration-yellow-500 text-white hover:text-gray-200'
                target='__blank'
             >
